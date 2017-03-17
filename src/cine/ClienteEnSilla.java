@@ -11,4 +11,5 @@ package cine;
  */
 public class ClienteEnSilla {
     
+    
 }

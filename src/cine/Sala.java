@@ -30,7 +30,7 @@ public class Sala {
     
     public void pintarSala(){
         Scanner sc = new Scanner(System.in);
-        byte i, j;
+        byte i, j, k;
         char [][]salaResult = new char [filasSala][columnasSala];
     
         for(i=0; i < filasSala; i++){
@@ -46,7 +46,8 @@ public class Sala {
             System.out.print("|");
             }
         }
-        for(i=0; i < filasSala * columnasSala; i++){
+        escojerSillas();
+        for(k=0; k < ((filasSala)*(columnasSala)) ; k++){
             System.out.println();
             System.out.println("Que silla desea ocupar?: ");
             System.out.println("Recuerda que dichas sillas inician en 0-0");
@@ -69,6 +70,16 @@ public class Sala {
                    System.out.print("|");
                 }
             }
+            System.out.println();
         }
+    }
+    public void escojerSillas(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite cuantas sillas generales desea: ");
+        byte sillasGenerales = sc.nextByte();
+        System.out.print("Digite cuantas sillas preferenciales desea: ");
+        byte sillasPreferenciales = sc.nextByte();
+        System.out.print("Digite cuantas sillas ejecutivas desea: ");
+        byte sillasEjecutivas = sc.nextByte();
     }
 }

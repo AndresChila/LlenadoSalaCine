@@ -63,7 +63,7 @@ public class Cine {
         System.out.println();
     }
     private void iniciarSala(){
-        byte filasSala, columnasSala, sillasGenerales, sillasPreferenciales, sillasEjecutivas;
+        byte filasSala, columnasSala;
         System.out.print("Digite las filas que desea en la sala 1: ");
         filasSala = teclado.nextByte();
         System.out.print("Digite las columnas que desea en la sala 1: ");
